@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpoonFeed - Smart Restaurant Solutions | Demo</title>
+    <link rel="stylesheet" href="demo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <div class="logo">
+                    <span class="logo-icon">S</span>
+                    <span class="logo-text">SpoonFeed</span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Services</a>
+                <a href="#" class="nav-link">Features</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link active">Demo</a>
+                <a href="#" class="nav-link">Blog</a>
+            </div>
+            <button class="schedule-btn">Schedule Demo</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+    Experience <span class="highlight typewriter-text" id="typewriter"></span><span class="cursor">|</span>
+</h1>
+
+            <p class="hero-subtitle">
+                Schedule a personalized demo and see how SpoonFeed can transform your restaurant operations
+            </p>
+            <div class="hero-features">
+                <div class="feature-item">
+                    <span class="feature-icon"><img src="https://cdn-icons-png.flaticon.com/512/6664/6664427.png" height="25px" width="25px" alt=""></span>
+                    <span>Free 2-Day Trial</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon"><img src="https://cdn-icons-png.flaticon.com/512/3208/3208746.png" height="25px" width="25px" alt=""></span>
+                    <span>15-Minute Demo</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon"><img src="https://cdn-icons-png.flaticon.com/512/10691/10691802.png" height="25px" width="25px" alt=""></span>
+                    <span>Same-Day Setup</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-grid">
+            <!-- Demo Form -->
+            <div class="demo-form-section">
+                <div class="form-card">
+                    <div class="form-header">
+                        <span class="form-icon"><img src="https://cdn-icons-png.flaticon.com/512/10691/10691802.png" height="25px" width="25px" alt=""></span>
+                        <h2>Schedule Your Demo</h2>
+                        <p>Get a personalized walkthrough of SpoonFeed's features</p>
+                    </div>
+                    
+                    <form class="demo-form" action="https://formspree.io/f/mwpqoqwg" method="POST">
+    <div class="form-row">
+        <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" placeholder="you@restaurant.com" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="restaurant">Restaurant Name *</label>
+        <input type="text" id="restaurant" name="restaurantName" placeholder="Your Restaurant Name" required>
+    </div>
+    
+    <div class="form-row">
+        <div class="form-group">
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="preferredDate">
+        </div>
+        <div class="form-group">
+            <label for="time">Preferred Time</label>
+            <input type="time" id="time" name="preferredTime">
+        </div>
+    </div>
+    
+    <!-- Hidden field to specify demo type -->
+    <input type="hidden" name="formType" value="SpoonFeed Demo Request">
+    
+    <button type="submit" class="submit-btn">
+        <span class="btn-icon"><span class="material-symbols-outlined">
+event_available
+</span></span>
+        Schedule My Demo
+    </button>
+    <div class="container info" style="margin-top: 20px;">
+       <center>
+         <p class="info-text"></p>
+            <small>By submitting, you agree to our <a href="#" style="text-decoration: none;color: #ffd700;">Privacy Policy</a> and <a href="#" style="text-decoration: none;color: #ffd700;">Terms of Service</a>.<br>
+            (Don’t worry, we hate spam as much as we hate cold fries.)</small>
+        </p>
+        <p class="info-text">
+            <small>Your info stays with us—no secret sauce sharing with third parties.</small>
+        </p>
+       </center>
+    </div>
+</form>
+
+                </div>
+            </div>
+
+            <!-- Video Section -->
+            <div class="video-section">
+                <div class="video-card">
+                    <div class="video-placeholder">
+                        <div class="play-button">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="video-content">
+                        <h3>See SpoonFeed in Action</h3>
+                        <p>Watch how our system transforms the dining experience from order to payment</p>
+                        <button class="watch-btn">
+                            <span class="btn-icon"><span class="material-symbols-outlined">
+play_arrow
+</span></span>
+                            Watch Demo Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Demo Features -->
+        <section class="demo-features">
+            <h2 class="section-title">What You'll See in the Demo</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <span class="feature-icon"><span class="material-symbols-outlined" style="font-size: 34px;margin-top: 8px;">
+qr_code
+</span></span>
+                    </div>
+                    <h3>QR Menu Demo</h3>
+                    <p>See how customers scan and order without downloading apps</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <span class="feature-icon"><span class="material-symbols-outlined" style="font-size: 34px;margin-top: 8px;">
+mobile_camera
+</span></span>
+                    </div>
+                    <h3>Mobile Experience</h3>
+                    <p>Experience the customer journey from their perspective</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <span class="feature-icon"><span class="material-symbols-outlined" style="font-size: 34px;margin-top: 8px;">
+bar_chart_4_bars
+</span></span>
+                    </div>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Explore powerful insights and reporting features</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-card">
+                <div class="cta-icon"><span class="material-symbols-outlined" style="font-size: 55px;">
+featured_seasonal_and_gifts
+</span></div>
+                <h2>Free 2-Day Trial Included</h2>
+                <p>Experience SpoonFeed risk-free with full access to all features</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-icon">S</span>
+                    <span class="logo-text">SpoonFeed</span>
+                </div>
+                <p class="brand-tagline">Smart Dining Starts Here</p>
+                <p class="brand-description">
+                    Revolutionizing the restaurant industry with cutting-edge technology that transforms dining experiences and streamlines operations.
+                </p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Demo</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <p><span class="material-symbols-outlined">
+alternate_email
+</span> <a href="mailto:spoonfeed.devp@gmail.com" style="text-decoration: none;color:white;">spoonfeed.devp@gmail.com</a></p>
+                        <p><span class="material-symbols-outlined">
+call
+</span> <a href="tel:+91 7000344658" style="text-decoration: none;color:white;">+91 7000344658</a></p>
+                        <p><span class="material-symbols-outlined">
+call
+</span> <a href="tel:+91 90984 92122" style="text-decoration: none;color:white;">+91 90984 92122</a></p>
+                        <p><span class="material-symbols-outlined">
+add_location_alt
+</span> <span style="color: white;"> Korba, Chhattisgarh, India</span></p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="demo.js"></script>
+</body>
+</html>
