@@ -1,141 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quattrocento:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
+    <title>About - SpoonFeed | Smart Restaurant Management</title>
     <link rel="stylesheet" href="about.css">
-    <title>SpoonFeed</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css" rel="stylesheet">
 </head>
-
 <body>
-    <nav>
-        <div class="container">
-            <h1>SpoonFeed</h1>
-            <div class="open_menu">
+    <!-- Intro Loading Screen -->
+    
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>SpoonFeed</h1>
+            </div>
+            <div class="nav-menu" id="nav-menu">
                 <ul>
-                    <li><a href="index.html#home">Home</a></li>
-                    <li><a href="index.html">Services</a></li>
-                    <li><a href="index.html#features">Features</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#demo.html">Demo</a></li>
-                    <li><a href="index.html#insights">Blog</a></li>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html" class="nav-link">Services</a></li>
+                    <li><a href="index.html" class="nav-link">Features</a></li>
+                    <li><a href="about.html" class="nav-link active">About</a></li>
+                    <li><a href="demo.html" class="nav-link">Demo</a></li>
+                    <li><a href="index.html" class="nav-link">Insights</a></li>
                 </ul>
             </div>
-            <button>
+            <button class="demo-btn">
                 <i class="ri-calendar-line"></i>
-                <p>Schedule Demo</p>
+                Schedule Demo
             </button>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
+
+    <!-- Main Content -->
     <main>
-        <section id="about">
-            <div class="header">
-                <div class="container">
-                    <h1>About <span style="color: #ffcc00;">SpoonFeed</span></h1>
-                    <p>We're on a mission to revolutionize the restaurant industry with cutting-edge technology that
-                        empowers businesses and delights customers.</p>
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Transforming <span class="highlight">Restaurants</span> with Smart Technology</h1>
+                    <p>Founded in 2025 in the heart of Korba, SpoonFeed was born from a simple observation: restaurants were struggling with outdated systems while customers craved seamless digital experiences.</p>
                 </div>
             </div>
-            <div class="origin">
-                <div class="container">
-                    <div class="story">
-                        <h2>Our <span style="background: linear-gradient(70deg, #ffcc00, #ffeb9a); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Origin Story</span></h2>
-                        <p>Founded in 2024 in the heart of Bilaspur, SpoonFeed was born from a simple observation: restaurants were struggling with outdated systems while customers craved seamless digital experiences.</p>
+        </section>
+
+        <!-- Origin Story Section -->
+        <section class="origin-story">
+            <div class="container">
+                <div class="story-content">
+                    <div class="story-text">
+                        <h2>Our Origin <span class="highlight">Story</span></h2>
                         <p>Our founders, having witnessed firsthand the challenges faced by local restaurants, decided to bridge this gap by bringing big-tech solutions to every dining establishment, regardless of size or budget.</p>
-                        <div class="mission_tag">
-                            <i class="ri-focus-2-line"></i>
-                            <div class="text_cont">
+                        <p>We started with a vision to democratize restaurant technology, making powerful tools accessible to everyone from small family restaurants to large dining chains.</p>
+                        
+                        <div class="mission-highlight">
+                            <div class="mission-icon">
+                                <i class="ri-restaurant-line"></i>
+                            </div>
+                            <div class="mission-text">
                                 <h4>Our Mission</h4>
-                            <p>Democratizing restaurant technology for everyone</p>
+                                <p>Democratizing restaurant technology for everyone, ensuring every dining establishment can deliver exceptional customer experiences.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="stats">
-                        <div class="stat_card">
-                            <div class="card_content">
-                            <div class="top">
-                                <div class="served"><h6>500+</h6><p>Restaurants Served</p></div>
-                                <div class="orders"><h6>1M+</h6><p>Orders Processed</p></div>
-                            </div>
-                            <div class="bottom">
-                                <div class="uptime"><h6>99.9%</h6><p>Uptime Gauranteed</p></div>
-                                <div class="orders"><h6>24/7</h6><p>Support Available</p></div>
-                            </div>
+                    
+                    <div class="stats-card">
+                        <div class="stat-item">
+                            <h3>100+</h3>
+                            <p>Restaurants Served</p>
                         </div>
+                        <div class="stat-item">
+                            <h3>50K+</h3>
+                            <p>Orders Processed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>99.9%</h3>
+                            <p>Uptime</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>24/7</h3>
+                            <p>Support</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="goal">
-                <div class="container">
-                    <div class="mission">
-                        <i class="ri-focus-2-line"></i>
-                        <h4>Our Mission</h4>
-                        <p>To empower every restaurant with enterprise-grade technology that was once only available to large chains, making digital transformation accessible and affordable for all.</p>
+        </section>
+
+        <!-- Mission & Vision Section -->
+        <section class="mission-vision">
+            <div class="container">
+                <div class="mv-grid">
+                    <div class="mission-card">
+                        <div class="card-icon">
+                            <i class="ri-crosshair-2-line"></i>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>To revolutionize the restaurant industry by providing cutting-edge, accessible technology solutions that enhance both operational efficiency and customer satisfaction across all dining establishments.</p>
                     </div>
-                    <div class="vision">
-                        <i class="ri-eye-2-line"></i>
-                        <h4>Our Vision</h4>
-                        <p>A world where every dining experience is enhanced by smart technology, creating value for restaurants and delight for customers in every interaction.</p>
+                    
+                    <div class="vision-card">
+                        <div class="card-icon">
+                            <i class="ri-eye-line"></i>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>To be the global leader in restaurant technology, creating a world where every dining experience is seamless, efficient, and memorable through innovative digital solutions.</p>
                     </div>
                 </div>
             </div>
-            <div class="founder">
-                <h2>Meet Our <span style="color: #ffcc00;">founders</span></h2>
-                <p>Visionary leaders with a passion for innovation and restaurant success</p>
-                <div class="team_vision">
-                    <i class="ri-group-line"></i>
-                    <h3>The SpoonFeed Team</h3>
-                    <p>Our diverse team combines decades of experience in technology, hospitality, and business development. We're united by a shared vision of transforming the restaurant industry through innovative solutions that deliver real value to our clients.</p>
+        </section>
+
+        <!-- Meet Our Founders Section -->
+        <!-- <section class="founders">
+            <div class="container">
+                <div class="founders-header">
+                    <h2>Meet Our <span class="highlight">Founders</span></h2>
+                    <p>Visionary leaders dedicated to transforming the restaurant industry through innovative technology solutions and unwavering commitment to excellence.</p>
+                </div>
+                
+                <div class="founders-grid">
+                    <div class="founder-card">
+                        <div class="founder-image-placeholder">
+                            <img src="WhatsApp_Image_2025-07-28_at_2.14.13_AM-removebg-preview.png" alt="Founder Name - Co-Founder & CEO" class="founder-image">
+
+                        </div>
+                        <div class="founder-info">
+                            <h4>Sujal Sharma</h4>
+                            <span class="founder-role">Developer</span>
+                            <p>Passionate about leveraging technology to solve real-world problems in the restaurant industry. With extensive experience in software development and business strategy.</p>
+                            <div class="founder-social">
+                                <i class="ri-linkedin-line"></i>
+                                
+                                <i class="ri-mail-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="founder-card">
+                        <div class="founder-image-placeholder">
+                            <img src="" alt="Founder Name - Co-Founder & CEO" class="founder-image">
+
+                        </div>
+                        <div class="founder-info">
+                            <h4>Ayush Sharma</h4>
+                            <span class="founder-role">Developer</span>
+                            <p>Technology enthusiast with a deep understanding of restaurant operations. Committed to building scalable solutions that drive business growth and customer satisfaction.</p>
+                            <div class="founder-social">
+                                <i class="ri-linkedin-line"></i>
+                                
+                                <i class="ri-mail-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Team Vision Section -->
+        <section class="team-vision">
+            <div class="container">
+                <div class="vision-content">
+                    <div class="vision-icon">
+                        <i class="ri-team-line"></i>
+                    </div>
+                    <h3>Our Team Vision</h3>
+                    <p>We believe in building a collaborative, innovative team that's passionate about creating technology solutions that truly make a difference. Our diverse team combines technical expertise with deep industry knowledge to deliver exceptional results for our clients.</p>
+                    <div class="vision-values">
+                        <div class="value-item">
+                            <i class="ri-lightbulb-line"></i>
+                            <span>Innovation</span>
+                        </div>
+                        <div class="value-item">
+                            <i class="ri-heart-line"></i>
+                            <span>Passion</span>
+                        </div>
+                        <div class="value-item">
+                            <i class="ri-trophy-line"></i>
+                            <span>Excellence</span>
+                        </div>
+                        <div class="value-item">
+                            <i class="ri-hand-heart-fill"></i>
+                            <span>Partnership</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer style="background: white;">
-        <div class="container">
+
+    <!-- Footer -->
+    <footer>
+        <div class="container" style="padding-bottom: 2rem;">
+            <div class="footer_topic">
+                <h1>SpoonFeed</h1>
+                <h5>Revolutionizing dining with smart technology</h5>
+                <p>Transform your restaurant with cutting-edge QR-based solutions, smart billing systems, and powerful analytics that drive real business growth.</p>
+            </div>
             <div class="footer_row">
-                <div class="footer_topic">
-                    <h1 style="color: black;">SpoonFeed</h1>
-                    <h5>Smart Dinning Starts Here</h5>
-                    <p style="color: rgb(59, 59, 59);">Revolutionizing the restaurant industry with cutting-edge technology that transforms dining
-                        experiences and streamlines operations.</p>
-                </div>
                 <div class="quick_links">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a style="color: rgb(62, 62, 62)"; href="index.html#home">Home</a></li>
-                        <li><a style="color: rgb(62, 62, 62)"; href="index.html#services">Services</a></li>
-                        <li><a style="color: rgb(62, 62, 62)"; href="index.html#features">Features</a></li>
-                        <li><a style="color: rgb(62, 62, 62)"; href="about.html">About</a></li>
-                        <li><a style="color: rgb(62, 62, 62)"; href="">Demo</a></li>
-                        <li><a style="color: rgb(62, 62, 62)"; href="index.html#insights">Blog</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#about">About</a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="contact">
-                <h3>Contact Us</h3>
-                <div class="contact_info">
-                    <i style="color: rgb(62, 62, 62)";  class="ri-mail-line"><p>spoonfeed.devp@gmail.com</p></i>
-                    <i style="color: rgb(62, 62, 62)"; class="ri-phone-fill"><p>+91 00000 00000</p></i>
-                    <i style="color: rgb(62, 62, 62)"; class="ri-map-pin-line"><p>Korba, Chhattisgarh, India</p></i>
-                </div>
-                <div class="social_handle">
-                    <i style="color: rgb(25, 25, 25)";  class="ri-instagram-line"></i>
-                    <i style="color: rgb(25, 25, 25)"; class="ri-linkedin-box-line"></i>
+                <div class="contact">
+                    <h3>Contact</h3>
+                    <div class="contact_info">
+                        <i class="ri-mail-line"><p>hello@spoonfeed.com</p></i>
+                        <i class="ri-phone-line"><p>+91 98765 43210</p></i>
+                    </div>
+                    <div class="social_handle">
+                        <i class="ri-twitter-line"></i>
+                        <i class="ri-linkedin-line"></i>
+                        <i class="ri-instagram-line"></i>
+                    </div>
                 </div>
             </div>
         </div>
-        <p style="color: rgb(25, 25, 25)";
-     class="made_by">© 2025 SpoonFeed. All rights reserved. Built with passion for restaurant innovation.</p>
+        <div class="made_by">
+            <p>&copy; 2025 SpoonFeed. All rights reserved.</p>
+        </div>
     </footer>
-</body>
 
+    <script src="about.js"></script>
+</body>
 </html>

@@ -1,85 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpoonFeed - Smart Restaurant Management</title>
     <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quattrocento:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <title>SpoonFeed</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css" rel="stylesheet">
 </head>
-
 <body>
+    <!-- Intro Loading Screen -->
     <div id="intro">
         <h1>SpoonFeed</h1>
     </div>
-    <nav>
-        <div class="container">
-            <h1>SpoonFeed</h1>
-            <div class="open_menu">
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>SpoonFeed</h1>
+            </div>
+            <div class="nav-menu" id="nav-menu">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="demo.html">Demo</a></li>
-                    <li><a href="#insights">Blog</a></li>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="demo.html" class="nav-link">Demo</a></li>
+                    <li><a href="#insights" class="nav-link">Insights</a></li>
                 </ul>
             </div>
-            <a href="demo.html" style="text-decoration: none;">
-            <button>
+            <button class="demo-btn">
                 <i class="ri-calendar-line"></i>
-                <p>Schedule Demo</p>
+                Schedule Demo
             </button>
-        </a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
+
+    <!-- Main Content -->
     <main>
-        <section id="home" class="home">
+        <!-- Home Section -->
+        <section class="home" id="home" style="background-image: url('https://t4.ftcdn.net/jpg/02/92/47/87/360_F_292478791_MRWCQSrVTjh3TMOQ6d6gElLD8dUGdAkp.jpg'); background-repeat: no-repeat;background-size: cover; padding-bottom: 3rem;background-attachment: fixed;">
             <div class="container">
                 <div class="topic">
-                    <h1>Revolutionizing <span style="background: linear-gradient(70deg, #ffcc00, #ffeb9a); /* Change colors as needed */
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;">Dining with Smart</span><span style="color: #ffcc00;">
-                            Tech</span></h1>
-                    <h2>Tramsform your restaurant with QR-based menus, smart billing, and powerful analytics. No app
-                        downloads required - just scan, order, and grow.</h2>
+                    <h1>Revolutionizing <span class="highlight">Restaurant Management</span></h1>
+                    <h2 style="color: rgb(221, 221, 221);font-weight: bold;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Transform your dining experience with smart QR-based digital menus, intelligent billing systems, and powerful analytics that drive growth.</h2>
                     <div class="demo">
-                        <a href="demo.html" style="text-decoration: none;">
-                        <button class="schedule"><i class="ri-calendar-line"></i>
-                            <p>Schedule a Demo</p>
+                        <button class="schedule">
+                            <i class="ri-calendar-check-line"></i>
+                            <p>Schedule Demo</p>
                         </button>
-                        </a>
-                        <button class="peek">
-                            <i class="ri-qr-code-line"></i>
-                            <p>See How It Works</p>
+                        <button class="peek" onclick="window.location.href='demo.html'">
+                            <i class="ri-eye-line"></i>
+                            Take a Peek
                         </button>
                     </div>
                     <ul>
                         <li>5-Minute Setup</li>
-                        <li>No app Reqiured</li>
-                        <li>Free 2-Days Trial</li>
+                        <li>No App Required</li>
+                        <li>Free 2-Day Trial</li>
                     </ul>
                 </div>
-                <div class="scroll_down_arrow"><i class="ri-arrow-down-wide-line"></i></div>
                 <div class="preview">
+                    <div class="qr_jump">
+                        <i class="ri-qr-code-line"></i>
+                    </div>
                     <div class="frame">
                         <div class="display">
                             <div class="display_head">
-                                <p><i class="ri-qr-code-line"></i>Scan to Order</p>
+                                <p><i class="ri-qr-code-line"></i> Scan to Order</p>
                                 <i class="ri-smartphone-line"></i>
                             </div>
                             <div class="display_middle">
                                 <div class="dish">
                                     <i class="ri-restaurant-line"></i>
                                     <div class="about_dish">
-                                        <h4>Butter Chicken</h4>
-                                        <p>₹420</p>
+                                        <h4>Paneer Tikka</h4>
+                                        <p>₹320</p>
                                     </div>
                                 </div>
                                 <div class="dish">
@@ -90,24 +93,24 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="display_button">
-                                <p>Add to Cart</p>
-                            </button>
+                            <button class="display_button">Add to Cart</button>
                         </div>
                     </div>
-                    <div class="qr_jump"><i class="ri-qr-code-line"></i></div>
+                    <div class="scroll_down_arrow">
+                        <i class="ri-arrow-down-line"></i>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="services" class="services">
-            <div class="service_head">
-                <h2>Our Premium <span
-                        style="background: linear-gradient(70deg, #ffcc00, #ffeb9a); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Services</span>
-                </h2>
-                <p>Comprehensive restaurant management solutions designed to stramline operations and boost
-                    profitability</p>
-            </div>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
             <div class="container">
+                <div class="service_head">
+                    <h2>Our Premium <span class="highlight">Services</span></h2>
+                    <p>Comprehensive restaurant management solutions designed to streamline operations and boost profitability with cutting-edge technology.</p>
+                </div>
+
                 <div class="qr_service">
                     <div class="qr_detail">
                         <div class="qr_detail_head">
@@ -115,190 +118,174 @@
                             <h3>QR-Based Digital Menu System</h3>
                         </div>
                         <div class="qr_detail_mid">
-                            <p>Revolutionary menu experience that works app downloads. <br>
-                                Customers simply scan, browser, and customize their orders directly from their phones.
-                            </p>
+                            <p>Revolutionary menu experience that works without app downloads. Customers simply scan, browse, and customize their orders directly from their phones with real-time updates and seamless integration.</p>
                         </div>
                         <div class="qr_detail_end">
                             <ul>
                                 <li>Instant QR code generation for each table</li>
+                                <li>Real-time menu updates and customization</li>
                                 <li>Multi-language support</li>
-                                <li>HD food photography integration</li>
                             </ul>
                             <ul>
-                                <li>Real-time menu updates and customization</li>
                                 <li>Allergen and dietary information</li>
+                                <li>HD food photography integration</li>
                                 <li>Order customization and special requests</li>
                             </ul>
                         </div>
                     </div>
                     <div class="service_card">
+                        <div class="premium_jump">
+                            <p>Premium</p>
+                        </div>
                         <div class="card_frame">
                             <div class="card_icon">
                                 <i class="ri-qr-code-line"></i>
                             </div>
-                            <div class="premium_jump">
-                                <p>Premium</p>
-                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="billing_service">
                     <div class="service_card">
+                        <div class="premium_jump">
+                            <p>Premium</p>
+                        </div>
                         <div class="card_frame">
                             <div class="card_icon">
-                                <i class="ri-bank-card-2-line"></i>
-                            </div>
-                            <div class="premium_jump">
-                                <p>Premium</p>
+                                <i class="ri-bill-line"></i>
                             </div>
                         </div>
                     </div>
                     <div class="billing_detail">
                         <div class="billing_detail_head">
-                            <i class="ri-bank-card-2-line"></i>
+                            <i class="ri-bill-line"></i>
                             <h3>Smart Digital Billing System</h3>
                         </div>
                         <div class="billing_detail_mid">
-                            <p>Automated billing that syncs with your kitchen, handles tax calculations, and supports
-                                multiple payment methods with split billing capabilities.</p>
+                            <p>Automated billing that syncs with your kitchen, handles tax calculations, and supports multiple payment methods with split billing capabilities for seamless customer experience.</p>
                         </div>
                         <div class="billing_detail_end">
                             <ul>
                                 <li>Automatic bill generation and sharing</li>
+                                <li>GST and tax calculations</li>
                                 <li>Split billing for groups</li>
-                                <li>Multiple payment gateway integration</li>
                             </ul>
                             <ul>
-                                <li>GST and tax calculations</li>
                                 <li>Kitchen order synchronization</li>
+                                <li>Multiple payment gateway integration</li>
                                 <li>Digital receipt management</li>
                             </ul>
                         </div>
                     </div>
                 </div>
+
                 <div class="analysis_service">
                     <div class="analysis_detail">
                         <div class="analysis_detail_head">
-                            <i class="ri-bar-chart-grouped-fill"></i>
-                            <h3>Weelky Analytics & Reports</h3>
+                            <i class="ri-line-chart-line"></i>
+                            <h3>Weekly Analytics & Reports</h3>
                         </div>
                         <div class="analysis_detail_mid">
-                            <p>Comprehensive business insights with detailed analytics covering sales performance,
-                                profit margins, and growth metrics in exportable PDF fromats.</p>
+                            <p>Comprehensive business insights with detailed analytics covering sales performance, profit margins, and growth metrics in exportable PDF formats for informed decision making.</p>
                         </div>
                         <div class="analysis_detail_end">
                             <ul>
                                 <li>Total sales and revenue tracking</li>
+                                <li>Profit margin analysis</li>
                                 <li>Item-wise performance metrics</li>
-                                <li>Customer behavior insights</li>
                             </ul>
                             <ul>
-                                <li>Profit margin analysis</li>
                                 <li>Net worth change calculations</li>
+                                <li>Customer behavior insights</li>
                                 <li>Exportable PDF reports</li>
                             </ul>
                         </div>
                     </div>
                     <div class="service_card">
+                        <div class="premium_jump">
+                            <p>Premium</p>
+                        </div>
                         <div class="card_frame">
                             <div class="card_icon">
-                                <i class="ri-bar-chart-grouped-fill"></i>
-                            </div>
-                            <div class="premium_jump">
-                                <p>Premium</p>
+                                <i class="ri-line-chart-line"></i>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="features" class="features">
-            <div class="feature_head">
-                <h2>Powerful <span
-                        style="background: linear-gradient(70deg, #ffcc00, #ffeb9a); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Feautures</span>
-                </h2>
-                <p>Everything you need to transform your restaurant operations and deliver exceptional dinning
-                    experiences</p>
-            </div>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
             <div class="container">
+                <div class="feature_head">
+                    <h2>Powerful <span class="highlight">Features</span></h2>
+                    <p>Everything you need to transform your restaurant operations and deliver exceptional dining experiences with cutting-edge technology solutions.</p>
+                </div>
                 <div class="feature_cards">
                     <div class="fcard">
                         <i class="ri-flashlight-line"></i>
                         <h4>Smart Kitchen Sync</h4>
-                        <p>Order flow directly to your kitchen display, eliminating miscommunication and reducing wait
-                            times.</p>
+                        <p>Orders flow directly to your kitchen display, eliminating miscommunication and reducing wait times significantly.</p>
                     </div>
                     <div class="fcard">
                         <i class="ri-smartphone-line"></i>
                         <h4>No App Required</h4>
-                        <p>Customer simply scan QR codes with their phone camera - no downloads, no hassle, instant
-                            access.</p>
+                        <p>Customers simply scan QR codes with their phone camera - no downloads, no hassle, instant access to your menu.</p>
                     </div>
                     <div class="fcard">
                         <i class="ri-time-line"></i>
-                        <h4>5-Minute Steup</h4>
-                        <p>Get up and running in minutes, not hours. uor streamlined onboarding gets you serving
-                            customers fast.</p>
+                        <h4>5-Minute Setup</h4>
+                        <p>Get up and running in minutes, not hours. Our streamlined onboarding gets you serving customers fast.</p>
                     </div>
                     <div class="fcard">
-                        <i class="ri-layout-masonry-line"></i>
+                        <i class="ri-dashboard-line"></i>
                         <h4>Multi-Restaurant Dashboard</h4>
-                        <p>Manage multiple locations from one unified dashboard with real-time insights and controls.
-                        </p>
+                        <p>Manage multiple locations from one unified dashboard with real-time insights and centralized controls.</p>
                     </div>
                     <div class="fcard">
-                        <i class="ri-shield-line"></i>
+                        <i class="ri-shield-check-line"></i>
                         <h4>Secure Data Encryption</h4>
-                        <p>Bank-level security ensures your customer data and business information stays protected.</p>
+                        <p>Bank-level security ensures your customer data and business information stays protected at all times.</p>
                     </div>
                     <div class="fcard">
                         <i class="ri-palette-line"></i>
                         <h4>Customizable Themes</h4>
-                        <p>Match your brand with customizable themes, colors, and layouts that reflect your restaurant's
-                            personality.</p>
+                        <p>Match your brand with customizable themes, colors, and layouts that reflect your restaurant's unique personality.</p>
                     </div>
                 </div>
                 <div class="get_your_trial">
                     <div class="content">
                         <h4>Ready to Transform Your Restaurant?</h4>
-                        <p class="content_description">Join hundreds of restaurants already using SpoonFeed to deliver
-                            exceptional dinning experiences.</p>
+                        <p class="content_description">Join hundreds of restaurants already using SpoonFeed to deliver exceptional dining experiences and boost their profits.</p>
                         <div class="trial_price_btn">
-                            <a href="demo.html" style="text-decoration: none;">
-                            <button class="trial">
-                                <p>Start Free Trial</p>
-                            </button>
-                            </a>
-                            <button class="price">
-                                <p>View Pricing</p>
-                            </button>
+                            <button class="trial">Start Free Trial</button>
+                            <button class="price">View Pricing</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="insights" class="insights">
-            <div class="insight_head">
-                <h2>Latest <span
-                        style="background: linear-gradient(70deg, #ffcc00, #ffeb9a); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Insights</span>
-                </h2>
-                <p>Stay ahead with expert insights on restaurant technology, industry trends, and growth strategies</p>
-            </div>
+
+        <!-- Insights Section -->
+        <section class="insights" id="insights">
             <div class="container">
+                <div class="insight_head">
+                    <h2>Latest <span class="highlight">Insights</span></h2>
+                    <p>Stay ahead with expert insights on restaurant technology, industry trends, and proven growth strategies from our team.</p>
+                </div>
                 <div class="insight_cards">
                     <div class="insight_card">
                         <div class="card_top">
-                            <i class="ri-flashlight-line"></i>
+                            <i class="ri-restaurant-line"></i>
                         </div>
                         <div class="content_top">
-                            <p class="insight_topic">Digital Innovation</p>
-                            <p class="topic_date"><i class="ri-calendar-line"></i> January 15, 2025</p>
+                            <span class="insight_topic">Digital Innovation</span>
+                            <span class="topic_date">January 15</span>
                         </div>
                         <div class="content_head">
                             <h5>Why Every Restaurant Needs a Digital Menu in 2025</h5>
-                            <p>Discover how digital menus are revolutionizing the dining experience and driving customer
-                                satisfaction to new heights.</p>
+                            <p>Discover how digital menus are revolutionizing the dining experience and driving customer satisfaction to new heights.</p>
                         </div>
                     </div>
                     <div class="insight_card">
@@ -306,13 +293,12 @@
                             <i class="ri-line-chart-line"></i>
                         </div>
                         <div class="content_top">
-                            <p class="insight_topic">Business Growth</p>
-                            <p class="topic_date"><i class="ri-calendar-line"></i> January 12, 2025</p>
+                            <span class="insight_topic">Business Growth</span>
+                            <span class="topic_date">January 12</span>
                         </div>
                         <div class="content_head">
                             <h5>Top 5 Reasons to Switch to Smart Billing</h5>
-                            <p>Learn why smart billing systems are becoming essential for modern restaurants and how
-                                they can boost your bottom line.</p>
+                            <p>Learn why smart billing systems are becoming essential for modern restaurants and how they can boost your bottom line.</p>
                         </div>
                     </div>
                     <div class="insight_card">
@@ -320,61 +306,57 @@
                             <i class="ri-bar-chart-line"></i>
                         </div>
                         <div class="content_top">
-                            <p class="insight_topic">Analytics</p>
-                            <p class="topic_date"><i class="ri-calendar-line"></i> January 10, 2025</p>
+                            <span class="insight_topic">Analytics</span>
+                            <span class="topic_date">January 10</span>
                         </div>
                         <div class="content_head">
                             <h5>Boosting Profits with Weekly Analytics</h5>
-                            <p>Unlock the power of data-driven decisions with comprehensive analytics that reveal hidden
-                                profit opportunities.</p>
+                            <p>Unlock the power of data-driven decisions with comprehensive analytics that reveal hidden profit opportunities.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
         </section>
     </main>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
+            <div class="footer_topic">
+                <h1>SpoonFeed</h1>
+                <h5>Revolutionizing dining with smart technology</h5>
+                <p>Transform your restaurant with cutting-edge QR-based solutions, smart billing systems, and powerful analytics that drive real business growth.</p>
+            </div>
             <div class="footer_row">
-                <div class="footer_topic">
-                    <h1>SpoonFeed</h1>
-                    <h5>Smart Dinning Starts Here</h5>
-                    <p>Revolutionizing the restaurant industry with cutting-edge technology that transforms dining
-                        experiences and streamlines operations.</p>
-                </div>
                 <div class="quick_links">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#features">Features</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="demo.html">Demo</a></li>
-                        <li><a href="#insights">Blog</a></li>
+                        <li><a href="#insights">Insights</a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="contact">
-                <h3>Contact Us</h3>
-                <div class="contact_info">
-                    <i class="ri-mail-line"><p>spoonfeed.devp@gmail.com</p></i>
-                    <i class="ri-phone-fill"><p>+91 00000 00000</p></i>
-                    <i class="ri-map-pin-line"><p>Korba, Chhattisgarh, India</p></i>
-                </div>
-                <div class="social_handle">
-                    <i class="ri-instagram-line"></i>
-                    <i class="ri-linkedin-box-line"></i>
+                <div class="contact">
+                    <h3>Contact</h3>
+                    <div class="contact_info">
+                        <i class="ri-mail-line"><p>spoonfeed.devp@gmail.com</p></i>
+                        <i class="ri-phone-line"><p>+91 70003 44658</p></i>
+                        <i class="ri-phone-line"><p>+91 90984 92122</p></i>
+                    </div>
+                    <div class="social_handle">
+                        <i class="ri-twitter-line"></i>
+                        <i class="ri-linkedin-line"></i>
+                        <a href="https://www.instagram.com/the.spoonfeed?igsh=M2Rsd3B5Ynd1N3pi"><i class="ri-instagram-line"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-        <p class="made_by">© 2025 SpoonFeed. All rights reserved. Built with passion for restaurant innovation.</p>
+        <div class="made_by">
+            <p>&copy; 2025 SpoonFeed. All rights reserved.</p>
+        </div>
     </footer>
-    <script>
-        setTimeout(() => {
-          document.getElementById("intro").style.display = "none";
-        }, 2000);
-      </script>
-</body>
 
+    <script src="script.js"></script>
+</body>
 </html>
